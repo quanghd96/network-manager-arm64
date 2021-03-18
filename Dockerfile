@@ -1,3 +1,3 @@
-FROM --platform=linux/arm64 ubuntu:18.04
+FROM --platform=linux/arm64 debian
  
 RUN apt update && apt install network-manager -y

@@ -1,5 +1,3 @@
-FROM arm64v8/ubuntu:18.04
-
-RUN /bin/bash -c "apt-get update"
-RUN /bin/bash -c "apt install -y network-manager"
-RUN rm -rf /var/lib/apt/lists/*
+FROM --platform=linux/arm64 ubuntu:18.04
+ 
+RUN apt update && apt install network-manager -y
